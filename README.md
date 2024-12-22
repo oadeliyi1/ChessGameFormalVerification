@@ -1,3 +1,5 @@
+Original Source Code and Chess Game Directly Taken From: https://github.com/minimonomana/Chess_Game?tab=readme-ov-file
+
 # Chess_Game
 This is our team project for COMP1020 course, building a chess game using java programming language, named LỳChess with graphical user interface and including various game mode.
 
@@ -46,7 +48,7 @@ To run Lychess on your local machine, please follow these steps:
 - After that, your choose a mode you prefer, enter the name of two players, and start your game.
 
 ![Inner menu](resources/innerMenu.png)
-Here is an instance of Chess 960 game with white checkmated black:
+Here is an instance of Chess 960 game with white checkmated black
 
 ![Chess 960](resources/notloser.png)
 
