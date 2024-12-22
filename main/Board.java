@@ -299,7 +299,7 @@ public class Board extends JPanel{
 		pieceList.add(new King(this, 7, 4, true));
 	}
 	
-	ArrayList<Piece> pieceList = new ArrayList<>();
+	public ArrayList<Piece> pieceList = new ArrayList<>();
 	public Stack<Move> moveList = new Stack<Move>();
 	
 	Piece selectedpiece;
