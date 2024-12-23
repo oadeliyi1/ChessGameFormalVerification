@@ -7,8 +7,6 @@ public class TimerVerificationTest {
     public static void main(String[] args) {
         // Abstract board setup
         TestBoard board = new TestBoard();
-        ChessTimerGUI timerGUI = new ChessTimerGUI(board, "bullet", "Player1", "Player2");
-
         // Property 1: Time counts
         // Verify that a move is only valid if the player's timer is greater than zero
         ChessTimerGUI.timer1 = 10; // Player 1 timer

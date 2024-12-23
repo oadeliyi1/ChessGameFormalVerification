@@ -5,7 +5,7 @@ import main.Board;
 import main.Move;
 
 public class Pawn extends Piece{
-	boolean enPassantVulnerable = false;
+	//boolean enPassantVulnerable = false;
 	public Pawn(Board board, int row, int col, boolean iswhite) {
 		super(board);
 		
@@ -46,7 +46,7 @@ public class Pawn extends Piece{
 	        } else if (dx == -1 && dy == 0 && board.get(x2, y2) == null) {
 	            return true;
 	        } else if (dx == -2 && dy == 0 && x1 == 6 && board.get(x2, y2) == null && board.get(x1 - 1, y1) == null) {
-	        	enPassantVulnerable = true;
+	        	//enPassantVulnerable = true;
 	            return true;
 	        } else if (!board.moveList.isEmpty()) {
 				Move lastMove = board.moveList.peek();

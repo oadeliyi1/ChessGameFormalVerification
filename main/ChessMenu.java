@@ -230,26 +230,26 @@ public class ChessMenu extends JFrame implements ActionListener {
         if (command != null && !command.isEmpty()) {
             cardLayout.show(mainPanel, command);
         }
-        if (command.equals("gamePanel")) {
+        if (command != null && command.equals("gamePanel")) {
         	mode = 0;
         	System.out.println("Classic!");        	
         }
-        if (command.equals("game2Panel")) {
+        if (command != null && command.equals("game2Panel")) {
         	mode = 3;
         	System.out.println("Blindfold!");
         }
-        if (command.equals("game3Panel")) {
+        if (command != null && command.equals("game3Panel")) {
 
         	mode = 1;
         	System.out.println("Randomized!");
 
         }
-        if (command.equals("game4Panel")) {
+        if (command != null && command.equals("game4Panel")) {
         	mode = 2;
         	System.out.println("Advanced Blindfold!");
 
         }
-        if (command.equals("bullet")||command.equals("blizt")||command.equals("rapid")) {
+        if (command != null && (command.equals("bullet")||command.equals("blizt")||command.equals("rapid"))) {
         	String text1 = "Black";
         	String text2 = "White";
         	if (mode == 0) {

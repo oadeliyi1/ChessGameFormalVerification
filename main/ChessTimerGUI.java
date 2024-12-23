@@ -7,26 +7,27 @@ import java.awt.event.*;
 public class ChessTimerGUI extends JPanel {
     static int timer1; // time for each player's timer
     static int timer2;
-    static int startTime1; // start and end time of each player's turn
-    static int endTime1;
-    static int startTime2;
-    static int endTime2;
-    static boolean isTimerRunning; // indicates whether the timer is currently running or not
+    int startTime1; // start and end time of each player's turn
+    int endTime1;
+    int startTime2;
+    int endTime2;
+    boolean isTimerRunning; // indicates whether the timer is currently running or not
     static boolean isTimer1Active; // indicates which player's timer is currently active
     static boolean isTimer2Active;
-    static JLabel labelTimer1; // JLabel objects to display the timer values for each player
-    static JLabel labelTimer2;
-    static Timer timer1Obj; // Timer objects to control the timing functionality
-    static Timer timer2Obj;
-    static String name1 = "Black";
-    static String name2 = "White";
+    JLabel labelTimer1; // JLabel objects to display the timer values for each player
+    JLabel labelTimer2;
+    Timer timer1Obj; // Timer objects to control the timing functionality
+    Timer timer2Obj;
+    String name1 = "Black";
+    String name2 = "White";
 
     static Board board;
     static boolean canStart;
     JPanel panel;
     ImageIcon bg;
     JLabel lb;
-    
+
+
     public ChessTimerGUI(Board board, String timeMode, String t1, String t2) {
         ChessTimerGUI.board = board;
     	if (!t1.equals("")) name1 = t1;

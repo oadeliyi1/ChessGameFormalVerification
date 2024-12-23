@@ -75,7 +75,7 @@ public class PawnTest {
 
         public void setEnPassantVulnerable(Piece piece) {
             if (piece instanceof Pawn) {
-                ((Pawn) piece).enPassantVulnerable = true;
+                //((Pawn) piece).enPassantVulnerable = true;
             }
         }
     }

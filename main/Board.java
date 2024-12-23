@@ -392,8 +392,15 @@ public class Board extends JPanel{
 					}
 				}
 			}
-			pieceList.add(fakePiece);
-			fakePiece.hasFakeMoved = true;
+			if (fakePiece != null) {
+				pieceList.add(fakePiece);
+				fakePiece.hasFakeMoved = true;
+			} else {
+				// Log or handle the situation where fakePiece is null
+				System.err.println("Warning: fakePiece is null. No piece added.");
+			}
+//			pieceList.add(fakePiece);
+//			fakePiece.hasFakeMoved = true;
 		}
 		win();
 	}
@@ -499,8 +506,15 @@ public class Board extends JPanel{
 						}
 					}
 				}
-				pieceList.add(fakePiece);
-				fakePiece.hasFakeMoved = true;
+//				pieceList.add(fakePiece);
+//				fakePiece.hasFakeMoved = true;
+				if (fakePiece != null) {
+					pieceList.add(fakePiece);
+					fakePiece.hasFakeMoved = true;
+				} else {
+					// Log or handle the situation where fakePiece is null
+					System.err.println("Warning: fakePiece is null. No piece added.");
+				}
 			}		
 		}		
 	}

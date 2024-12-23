@@ -2,7 +2,7 @@ package pieces;
 
 import main.Board;
 
-public class KingTest {
+public class    KingTest {
     public static void main(String[] args) {
         // Create a dummy board
         Board board = new Board(0);
