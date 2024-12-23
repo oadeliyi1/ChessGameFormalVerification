@@ -2,5 +2,6 @@ Original Source Code and Chess Game Directly Taken From: https://github.com/mini
 
 
 # ChessGameFormalVerification
+To formal verification of the chess game, you need to have JBMC installed and following the pattern as below:
  ```
-& "C:\Program Files\cbmc\bin\jbmc.exe" --classpath "C:\Users\Yonghan Xie\Desktop\verification project\ChessGameFormalVerification\out\production\Chess_Game2" pieces.PawnTest
+& "C:\Program Files\cbmc\bin\jbmc.exe" --classpath "YOURPATH TO PRAGM\ChessGameFormalVerification\out\production\Chess_Game2" pieces.PawnTest
