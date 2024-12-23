@@ -2,3 +2,5 @@ Original Source Code and Chess Game Directly Taken From: https://github.com/mini
 
 
 # ChessGameFormalVerification
+ ```
+& "C:\Program Files\cbmc\bin\jbmc.exe" --classpath "C:\Users\Yonghan Xie\Desktop\verification project\ChessGameFormalVerification\out\production\Chess_Game2" pieces.PawnTest
